@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-media-icons {
+    @apply w-[10px] h-[10px] p-4 mx-1 rounded-full bg-[#588cd0] xl:p-5;
+  }
+  .show-menu {
+    @apply bg-blue-600 fixed right-0 top-0 px-5 h-[100%] w-[300px] flex flex-col gap-10 pt-5;
+  }
+  .hide-menu {
+    @apply xl:relative xl:flex-row xl:h-auto xl:w-auto xl:gap-3 xl:bg-transparent;
+  }
+  .transparent-btn {
+    @apply text-white
+    uppercase
+    rounded-full
+    border-2 border-white
+    transition
+    duration-500
+    bg-transparent
+    cursor-pointer
+    hover:bg-[#ffffff33];
+  }
+  .nav-a {
+    @apply transition duration-500 hover:text-[#588cd0] xl:text-[17px];
+  }
+  .nav-btn {
+    @apply rounded-full py-2  px-3 bg-[#588cd0] transition duration-500 hover:bg-[#184c91] sm:py-2 sm:text-[17px];
+  }
+  .hero-before {
+    @apply before:content-[''] before:absolute before:w-full before:min-h-[155%] before:top-0 before:left-0 before:-z-10 before:brightness-[0.5]  before:bg-no-repeat before:bg-cover before:bg-fixed;
+  }
+  .booking-main-div {
+    @apply flex flex-col ;
+  }
+  .booking-input {
+    @apply box-border px-5 py-3 res-82:px-2 rounded-full outline-none border-none transition duration-500 hover:border res-82:py-4 xl:px-[50px] 2xl:px-[70px];
+  }
+  .booking-label {
+    @apply min-w-[150px] text-[22px] text-white mb-2 font-mono  sm:w-auto res-82:text-[17px] lg:text-[22px];
+  }
+
+
+  
+}
