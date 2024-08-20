@@ -1,5 +1,5 @@
 import React from "react";
-import { Asserts } from "../../assets/images/Destination";
+import { Asserts } from "../../assets/images/Turisom_Data";
 
 const Header = () => {
   return (

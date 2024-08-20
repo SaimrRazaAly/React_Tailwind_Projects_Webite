@@ -11,16 +11,19 @@ export default {
         "oxford-blue": "#01213c",
         "yale-blue": "hsl(214, 72%, 33%)",
         "blue-ncs": "hsl(197, 100%, 36%)",
-        "gunmetal": "hsl(206, 34%, 20%)",
-        "gainsboro": "hsl(0, 0%, 88%)",
-        "cultured": "hsl(0, 0%, 98%)",
-        "onyx": " hsl(0, 0%, 25%)",
+        gunmetal: "hsl(206, 34%, 20%)",
+        gainsboro: "hsl(0, 0%, 88%)",
+        cultured: "hsl(0, 0%, 98%)",
+        onyx: " hsl(0, 0%, 25%)",
         "jet:": "hsl(0, 0%, 20%)",
       },
-    
-    screens:{
-      'res-82':'820px'
-    }
+
+      screens: {
+        "res-82": "820px",
+      },
+      gridTemplateColumns: {
+        "auto-fill-350": "repeat(auto-fill, minmax(350px, 1fr))",
+      },
     },
   },
   plugins: [],

@@ -17,7 +17,7 @@ import Gallary_5 from "./gallery-5.jpg";
 import Logo from "./logo.svg";
 import Logo_Blue from "./logo-blue.svg";
 // ================= END ===============
-export const Destination = [
+export const Destination_Data = [
   {
     des_img: Des_1,
     sub_title: "ITALY",
