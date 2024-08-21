@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
   return (
-    <nav className="flex justify-between items-center px-5 py-5 mt-3 border-b-2 border-b-white text-white">
+    <nav className="flex justify-between items-center px-5 py-0 mt-3 text-white">
       <div>
         <button className="nav-media-icons"></button>
         <button className="nav-media-icons"></button>
@@ -55,7 +55,7 @@ const Navbar = () => {
       <button className="nav-btn">
         Book Now
       </button>
-      <button onClick={() => setMenu(true)} className="xl:hidden text-[30px] border-[3px] px-3 mb-1 border-[#588cd0] rounded-full">=</button>
+      <button onClick={() => setMenu(true)} className="xl:hidden text-[20px] md:text-[30px] font-extrabold  border-2 md:border-[3px] px-3 mb-1 border-[#588cd0] rounded-full">=</button>
     </nav>
   );
 };

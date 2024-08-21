@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import Hero from "../Hero";
 import Booking from "../Booking";
 import Destination from "../Destination";
+import Pakages from "../Pakages";
 
 const Page = () => {
   return (
@@ -12,7 +13,7 @@ const Page = () => {
         <Hero />
         <Booking />
       <Destination/>
-   
+   <Pakages/>
       </div>
     </>
   );
