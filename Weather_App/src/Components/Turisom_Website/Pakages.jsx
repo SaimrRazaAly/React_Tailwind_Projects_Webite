@@ -1,4 +1,4 @@
-import { Asserts } from "../../assets/images/Turisom_Data";
+import { Asserts, Packages_Data } from "../../assets/images/Turisom_Data";
 import SectionHeading from "./SectionHeading";
 
 const Pakages = () => {
@@ -11,41 +11,63 @@ const Pakages = () => {
           "Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent."
         }
       />
-      <div className="mt-[50px] px-3 flex flex-col items-center box-border lg:flex-row">
+      <div className="mt-[50px] px-3 flex flex-col items-center justify-center gap-10 ">
         {/* the pakage box */}
-        <div className="flex items-center justify-center max-w-[300px] flex-col sm:max-w-[400px] xl:flex-row m-auto">
-          <div className="flex">
-            <img
-              src={Asserts.Gallary_1}
-              alt=""
-              className="w-full rounded-tl-[12px] rounded-t-[12px] rounded-b-none h-auto lg:h-full"
-            />
-          </div>
-          {/* text */}
-          <div className="py-10 px-5 bg-[#fafafa] ">
-            <h2 className="font-bold text-[1.2em]">
-              EXPERIENCE THE GREAT HOLIDAY ON BEACH
-            </h2>
-            <p className="text-onyx">
-              Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo
-              maiores, est aliquet porttitor! Eaque, cras, aspernatur.
-            </p>
-          {/* more detail */}
-          <div className="flex gap-5 py-2 items-center justify-center bg-white shadow-md mt-10 rounded-full">
-            <span className="pakages-min-detail"> 7D/6N</span>
-            <span className="pakages-min-detail"> pax: 10</span>
-            <span className="pakages-min-detail">Malaysia</span>
-          </div>
-          </div>
-          {/* reviews and prices */}
-          <div className="bg-united-nations-blue flex flex-col w-full items-center text-white py-3">
-            <span className="font-bold text-[1.5em]">(25 reviwes)</span>
-            <h1 className="text-[2.5em] font-extrabold">$750</h1>
-            <p>/ per person</p>
-            <button className="mt-5 transparent-btn  px-10 py-4">Buy Now</button>
-          </div>
-        </div>
+
+        {Packages_Data.map((v, i) => {
+          return (
+            <div
+              key={i}
+              className="flex items-center justify-center max-w-[300px] flex-col sm:max-w-[400px] res-95:flex-row m-auto  "
+            >
+              {/* <div className="res-90:max-[300px]"> */}
+              <img
+                src={v.pak_img}
+                alt=""
+                className="w-full rounded-tl-[12px] rounded-t-[12px] rounded-b-none res-95:max-w-[82%] res-95:rounded-none"
+              />
+              {/* </div> */}
+              {/* text */}
+              <div className="detail-container">
+                <h2 className="font-bold text-[1.2em] res-95:text-[1.3em]">
+                  {v.pak_title}
+                </h2>
+                <p className="text-onyx">{v.pak_para}</p>
+                {/* more detail */}
+                <div className="more-detail-container">
+                  <span className="pakages-min-detail">
+                    {v.pak_min_details.det_Person}
+                  </span>
+                  <span className="pakages-min-detail">
+                    {" "}
+                    {v.pak_min_details.det_Days}
+                  </span>
+                  <span className="pakages-min-detail">
+                    {v.pak_min_details.det_Country}
+                  </span>
+                </div>
+              </div>
+              {/* reviews and prices */}
+              <div className="review-container">
+                <span className="font-bold text-[1.5em] res-95:text-[1em] ">
+                  {v.pak_price.p_reviews}
+                </span>
+                <h1 className="text-[2.5em] font-extrabold">
+                  {v.pak_price.p_price}
+                </h1>
+                <p>{v.pak_price.p_per}</p>
+                <button className="mt-5 transparent-btn  px-10 py-4 res-95:px-2 res-95:py-2 text-[13px]">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          );
+        })}
       </div>
+
+      <button className="nav-btn px-[3.5rem] block m-auto py-4  mt-[35px] text-white">
+        Learn More
+      </button>
     </section>
   );
 };

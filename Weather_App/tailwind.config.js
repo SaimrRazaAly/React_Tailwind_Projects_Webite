@@ -20,6 +20,7 @@ export default {
 
       screens: {
         "res-82": "820px",
+        "res-95": "1080px",
       },
       gridTemplateColumns: {
         "auto-fill-350": "repeat(auto-fill, minmax(350px, 1fr))",

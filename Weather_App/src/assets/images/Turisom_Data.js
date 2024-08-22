@@ -38,7 +38,7 @@ export const Destination_Data = [
   },
 ];
 
-export const Packages = [
+export const Packages_Data = [
   {
     pak_img: Pak_1,
     pak_title: "EXPERIENCE THE GREAT HOLIDAY ON BEACH",
@@ -83,7 +83,7 @@ export const Packages = [
     },
     pak_price: {
       p_reviews: "24M+",
-      p_price: "$1500",
+      p_price: "$500",
       p_per: "/per family",
     },
   },
