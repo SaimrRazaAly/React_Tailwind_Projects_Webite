@@ -5,6 +5,7 @@ import Hero from "../Hero";
 import Booking from "../Booking";
 import Destination from "../Destination";
 import Pakages from "../Pakages";
+import Gallary from "../Gallary";
 
 const Page = () => {
   return (
@@ -12,8 +13,9 @@ const Page = () => {
       <div className="">
         <Hero />
         <Booking />
-      <Destination/>
-   <Pakages/>
+        <Destination />
+        <Pakages />
+        <Gallary />
       </div>
     </>
   );

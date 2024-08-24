@@ -51,7 +51,7 @@ export const Packages_Data = [
     },
     pak_price: {
       p_reviews: "24",
-      p_price: "$150",
+      p_price: "$2150",
       p_per: "/per person",
     },
   },
@@ -67,7 +67,7 @@ export const Packages_Data = [
     },
     pak_price: {
       p_reviews: "2K+",
-      p_price: "$100",
+      p_price: "$2100",
       p_per: "/per person",
     },
   },
@@ -83,7 +83,7 @@ export const Packages_Data = [
     },
     pak_price: {
       p_reviews: "24M+",
-      p_price: "$500",
+      p_price: "$1500",
       p_per: "/per family",
     },
   },

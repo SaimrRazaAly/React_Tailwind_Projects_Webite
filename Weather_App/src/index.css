@@ -4,7 +4,15 @@
 
 @layer components {
   .nav-media-icons {
-    @apply w-[10px] h-[10px] p-3 mx-1 rounded-full bg-[#588cd0] xl:p-5;
+    @apply w-[10px] h-[10px] p-3 mx-1  bg-[#588cd0] xl:p-5 text-white
+    uppercase
+    rounded-full
+    border border-white
+    transition
+    duration-500
+    bg-transparent
+    cursor-pointer
+    hover:bg-[#ffffff33];
   }
   .show-menu {
     @apply bg-blue-600 fixed right-0 top-0 px-5 h-[100%] w-[300px] flex flex-col gap-10 pt-5;
@@ -31,7 +39,7 @@
     @apply rounded-full py-2  px-3 bg-[#588cd0] transition duration-500 hover:bg-[#184c91] sm:py-2 sm:text-[17px];
   }
   .hero-before {
-    @apply before:content-[''] before:absolute before:w-full before:min-h-[155%] before:top-0 before:left-0 before:-z-10 before:brightness-[0.5]  before:bg-no-repeat before:bg-cover before:bg-fixed;
+    @apply before:content-[''] before:absolute before:w-full before:min-h-[155%] res-95:before:w-full before:top-0 before:left-0 before:-z-10 before:brightness-[0.5]  before:bg-no-repeat before:bg-cover before:bg-fixed;
   }
   .booking-main-div {
     @apply flex flex-col;
@@ -50,9 +58,9 @@
     @apply flex gap-5 py-2 res-95:gap-4 items-center justify-center bg-white shadow-md mt-10 res-95:mt-5 rounded-full res-95:min-w-[280px] res-95:px-2;
   }
   .review-container {
-    @apply bg-united-nations-blue flex flex-col w-full items-center text-white py-3 res-95:px-16  res-95:py-11 rounded;
+    @apply bg-united-nations-blue flex flex-col w-full items-center text-white py-3 res-95:px-16  res-95:py-[37px] res-95:rounded-tr-[12px] res-95:rounded-br-[12px] res-95:rounded-none rounded-bl-[12px]  rounded-br-[12px];
   }
   .detail-container {
-    @apply py-10 px-5 bg-[#fafafa]  res-95:py-8  res-95:px-20 res-95:text-left res-95:min-w-[500px] ;
+    @apply py-10 px-5 bg-[#fafafa]  res-95:py-[30px]  res-95:px-20 res-95:text-left res-95:min-w-[500px];
   }
 }
