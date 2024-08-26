@@ -12,7 +12,7 @@ const Pakages = () => {
         }
       />
       {/* <div className="mt-[50px] px-3 flex flex-col items-center justify-center gap-10 "> */}
-      <div className="mt-[50px] px-3  items-start  res-95:items-center flex res-95:flex-col justify-start flex-wrap res-95:justify-center gap-10 ">
+      <div className="my-[60px] px-3  items-start  res-95:items-center flex res-95:flex-col justify-start flex-wrap res-95:justify-center gap-10 ">
         {/* the pakage box */}
 
         {Packages_Data.map((v, i) => {
@@ -66,7 +66,7 @@ const Pakages = () => {
         })}
       </div>
 
-      <button className="nav-btn px-[3.5rem] block m-auto py-4  mt-[35px] text-white">
+      <button className="nav-btn px-[3.5rem] block m-auto py-4  text-white">
         Learn More
       </button>
     </section>

@@ -16,6 +16,7 @@ export default {
         "cultured": "hsl(0, 0%, 98%)",
         "onyx": " hsl(0, 0%, 25%)",
         "jet:": "hsl(0, 0%, 20%)",
+        "BGFooter" :"hsl(205, 36%, 17%)",
       },
 
       screens: {

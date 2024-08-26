@@ -12,7 +12,7 @@
     duration-500
     bg-transparent
     cursor-pointer
-    hover:bg-[#ffffff33];
+    hover:bg-[#ffffff33] ;
   }
   .show-menu {
     @apply bg-blue-600 fixed right-0 top-0 px-5 h-[100%] w-[300px] flex flex-col gap-10 pt-5;
@@ -63,4 +63,8 @@
   .detail-container {
     @apply py-10 px-5 bg-[#fafafa]  res-95:py-[30px]  res-95:px-20 res-95:text-left res-95:min-w-[500px];
   }
+.footer-li{
+  @apply border-r-2 cursor-pointer border-r-gainsboro px-2
+}
+
 }

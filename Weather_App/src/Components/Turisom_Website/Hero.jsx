@@ -8,7 +8,7 @@ const Hero = () => {
     <Header/>
     <Navbar/>
    <section className='w-full hero-before 
-   before:bg-[url(/hero-banner.jpg)] min-h-[100vh]  flex items-center justify-center flex-col'>
+   before:bg-[url(/hero-banner.jpg)] before:bg-no-repeat min-h-[100vh]  flex items-center justify-center flex-col'>
     <div className='text-center  text-white px-5 xl:max-w-[900px] md:max-w-[700px]'>
         <h2 className='text-[2em] font-extrabold xl:text-[5vw] md:text-[6vw]'>JOURNEY TO EXPLORE WORLD</h2>
         <p className='font-extralight '>Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos voluptatibus habitant? Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.</p>

@@ -15,31 +15,31 @@ const Gallary = () => {
           <img
             src={Asserts.Gallary_1}
             alt=""
-            className="w-full  object-cover rounded-xl mb-7 scale-y-[1.08] "
+            className="w-full  object-cover rounded-xl mb-7 scale-y-[1.08] transition-[1s] hover:brightness-110 "
           />
           <img
             src={Asserts.Gallary_5}
             alt=""
-            className="w-full   object-cover rounded-xl scale-y-[1.1] "
+            className="w-full   object-cover rounded-xl scale-y-[1.1] transition-[1s] hover:brightness-110 "
           />
         </div>
         <div className="w-full  my-5 md:my-0">
           <img
             src={Asserts.Gallary_3}
             alt=""
-            className="w-full object-cover rounded-xl "
+            className="w-full object-cover rounded-xl transition-[1s] hover:brightness-110 "
           />
         </div>
         <div className="flex flex-col md:flex-col sm:flex-row md:translate-x-0 sm:translate-x-[149px] md:gap-5 sm:gap-10 gap-3 items-center justify-center  ">
           <img
             src={Asserts.Gallary_4}
             alt=""
-            className="w-full  object-cover rounded-xl "
+            className="w-full  object-cover rounded-xl  transition-[1s] hover:brightness-110"
           />
           <img
             src={Asserts.Gallary_2}
             alt=""
-            className="w-full   object-cover rounded-xl "
+            className="w-full   object-cover rounded-xl transition-[1s] hover:brightness-110"
           />
         </div>
       </div>

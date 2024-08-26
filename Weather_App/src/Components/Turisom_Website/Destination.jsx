@@ -9,7 +9,7 @@ const Destination = () => {
         title={"Destination"}
         para="Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent."
       />
-      <div className="flex flex-wrap gap-[20px] justify-center items-center mt-[50px] px-5">
+      <div className="flex flex-wrap  sm:gap-[20px] justify-center items-center mt-[50px] px-5">
         {Destination_Data.map((card, index) => {
             return(
 
